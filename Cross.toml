@@ -1,0 +1,3 @@
+[target.armv5te-unknown-linux-gnueabi]
+image = "japaric/arm-unknown-linux-gnueabi:v0.1.4"
+

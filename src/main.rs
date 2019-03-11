@@ -10,11 +10,9 @@ fn main() -> Result<()> {
     let mut touch_sensor = TouchSensor::find().unwrap();
     
     loop {
-        if touch_sensor.get_pressed_state()? {
-            led.set_color(COLOR_AMBER)?;
-        } else {
-            led.set_color(COLOR_GREEN)?;
-        }
+        let is_pressed = touch_sensor.get_pressed_state()?;
+        let colour = if is_pressed { COLOR_AMBER } else { COLOR_GREEN };
+        led.set_color(colour)?;
     }
 }
 

@@ -5,4 +5,4 @@ authors = ["luis"]
 #edition = "2018"
 
 [dependencies]
-ev3dev-lang-rust = "0.4.0"
+ev3dev-lang-rust = "0.4.1"
